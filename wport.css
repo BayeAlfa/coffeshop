@@ -1,0 +1,981 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    
+}
+.main{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    background-color: rgb(5, 5, 39);
+    height: auto;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    gap: 170px;
+    word-wrap: nowrap;
+}
+nav h2{
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+span{
+    color: #f40950;
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 35px;
+    text-transform: capitalize;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-weight: 600;
+    transition: .5s;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+nav ul li a:hover{
+    color: #f40950;
+    transform: translateY(1.2);
+}
+nav .sub{
+    text-decoration: none;
+    background: #f40950;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 25px;
+   /*  transition: transform .4s; */
+    font-weight: bold;
+}
+nav .sub:hover{
+    background-color: transparent;
+    color: #fff8fa;
+    border: 2px solid #f40950;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+/* .pic{
+    width: 300px;
+    height: 500px;
+} */
+.text{
+    margin-top: 75px;
+    padding-top: 75px;
+}
+.text h2{
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 25px;
+    /* margin-left: 45px; */
+    /* padding: 10px; */
+}
+.text h4{
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.text h3{
+    font-size: 30px;
+    color: #e0e0e0;
+}
+.pic{
+    border: 2px solid transparent;
+    margin-right: 75px;
+}
+.pic img{
+    border-radius: 100px;
+    border: 3px solid white;
+    box-shadow: 4px 4px 0px 4px  #f4095096;
+    height: 410px;
+    width: 400px;
+    margin-top: 30px;
+}
+.about{
+    background-color: rgb(5, 5, 39);
+    height: auto;
+    width: 100%;
+}
+.about h2{
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+}
+.main1{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    padding-right: 15px;
+}
+.main1 img{
+    margin-top: 60px;
+    margin-left: 70px;
+    /* border: 2px solid #f40950; */
+    /* border-radius: 100px; */
+    box-shadow: 4px 4px 4px 4px white;
+}
+.about-text {
+    margin-right: 60px;
+}
+/* .about-text h2{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 55px;
+    margin-bottom: 20px;
+} */
+.about-text h5{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.about-text p{
+    font-weight: 500;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+button a{
+    font-weight: 500;
+    width: 30%;
+    height: 50px;
+    text-decoration: none;
+    background: transparent;
+    color: #f40950;
+   /*  border: 2px solid white;
+    border-radius: 30px; */
+    text-align: center;
+    padding: 10px;
+    transition: transform .4s;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+button a:hover{
+    background-color: #f40950;
+    color: #fff8fa;
+    border: 2px solid #f40950;
+    font-weight: 600;
+    font-size: 15px;
+}
+.service{
+    background-color: rgb(5, 5, 39);
+    height: auto;
+    width: 100%;
+    word-wrap: nowrap;
+    padding: 10px;
+}
+.title h2{
+    text-align: center;
+    font-size: 55px;
+    padding: 55px;
+    color: #fff;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card{
+    border: 2px solid rgb(201, 194, 194);
+    height: 350px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.card:hover{
+    border: 3px solid #f40950;
+}
+.card h5{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+.pra{
+    text-align: center;
+}
+.pra p{
+    padding: 5px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button{
+    font-weight: 700;
+    width: 30%;
+    height: 50px;
+    text-decoration: none;
+    background: transparent;
+    color: #f40950;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 25px;
+    transition: transform .4s;
+    font-weight: bold;
+    font-size: 20px;
+}
+.button:hover{
+    background-color: #f40950;
+    color: #fff8fa;
+    border: 2px solid #f40950;
+    font-weight: 800;
+    font-size: 25px;
+}
+.contact-me{
+    background-color: rgb(5, 5, 39);
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.contact-me p{
+    padding: 55px;
+    font-size: 75px;
+    color: aliceblue;
+}
+.button-two{
+    font-weight: 700;
+    width: 30%;
+    height: 50px;
+    text-decoration: none;
+    background-color: #f40950;
+    color: #fff8fa;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px 25px;
+    transition: transform .4s;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.button-two:hover{
+    background-color: #f40950;
+    color: #fff8fa;
+    border: 2px solid #f40950;
+    font-weight: 800;
+    font-size: 25px;
+}
+footer{
+    background-color: rgb(5, 5, 39);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #f40950c4;
+    font-size: 20px;
+}
+footer p{
+    font-size: large;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px;
+}
+.social{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social a{
+    border: 2px solid rgb(240, 235, 235);
+    padding: 10px;
+    width:auto;
+    height: 50px;
+    align-items: center;
+    border-radius: 360px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    word-spacing: 5px;
+    gap: 20px;
+}
+.social a span{
+    padding-left: 5px;
+    color: white;
+}
+.social a:nth-child(2){
+    width: auto;
+    word-wrap: nowrap;
+}
+.social a:last-child{
+    width: auto;
+}
+.social a:hover{
+    font-weight: bold;
+    font-size: large;
+    word-wrap: nowrap;
+}
+.social a:last-child:hover{
+    font-size: large;
+    font-weight: 100;
+}
+.end{
+    padding: 10px;
+}
+@media (max-width: 1535px){
+    .main{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .pic{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .content{
+        left: 3%;
+        transition: .2s;
+    }
+
+}
+/* @media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .main1 img{
+        width: 300px;
+        height: auto;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    .about-text h5{
+        font-size: 50px;
+    }
+    .about-text p{
+        font-size: 20px;
+    }
+    button{
+        font-size: small;
+    }
+    button:hover{
+        font-weight: 100;
+        font-size: 15px;
+    }
+    .about{
+        padding: 20px;
+    }
+    nav ul li{
+        display: inline-flex;
+        justify-content: space-around;
+        word-wrap: nowrap;
+        padding-left: 10px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        gap: 9px;
+        word-wrap: nowrap;
+    }
+    nav{
+        gap: 10px;
+    }
+    .content{
+        margin-top: -20px;
+        padding-left: 20px;
+    }
+    .pic img{
+        height: 350px;
+        width: 300px;
+        margin-top: 50px;
+    }
+    .text{
+        margin-top: 20px;
+    }
+    .box{
+        gap: 5px;
+        padding-left: 5px;
+        align-items: center;
+    }
+    .card{
+        margin-left: 15px;
+    }
+} */
+@media (max-width: 1195px){
+    .main1 img{
+        width: 200px;
+        height: auto;
+    }
+    .text h4{
+        font-size: 20px;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text h3{
+        font-size: 25px;
+    }
+    .about-text h2{
+        font-size: 20px;
+    }
+    .about-text h5{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 12px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .card{
+        height: 300px;
+        padding-left: 1px;
+        padding-right: 5px;
+        margin-right: 5px;
+    }
+    .main1 img{
+        height: 200px;
+    }
+    button{
+        font-size: small;
+    }
+    button:hover{
+        font-weight: 100;
+        font-size: 10px;
+    }
+    .contact-me p{
+        font-size: 50px;
+        margin-top: -40px;
+    }
+    .button{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .button:hover{
+        font-size: medium;
+        font-weight: 100;
+    }
+    .pra p{
+        font-size: 15px;
+    }
+    .about{
+        padding: 10px;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+    nav ul li{
+        display: inline-flex;
+        justify-content: space-around;
+        word-wrap: nowrap;
+        padding-left: 1px;
+        padding-right: 3px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+    }
+    nav ul li a{
+        font-size: 16px;
+        gap: 2px;
+        word-wrap: nowrap;
+        padding: 10px;
+    }
+    nav{
+        gap: 10px;
+    }
+    nav ul li{
+        padding: 15px;
+        margin: 10px;
+    }
+    .content{
+        margin-top: -20px;
+        padding-left: 20px;
+    }
+    .pic img{
+        height: 250px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .box{
+        gap: 5px;
+        padding-left: 5px;
+        align-items: center;
+    }
+    .card{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 990px){
+    /* .main1 img{
+        width: 200px;
+        height: auto;
+    } */
+    .text h4{
+        font-size: 20px;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text h3{
+        font-size: 25px;
+    }
+    .about-text h2{
+        font-size: 20px;
+    }
+    .about-text h5{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 12px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .card{
+        height: 300px;
+        padding-left: 1px;
+        padding-right: 5px;
+        margin-right: 5px;
+    }
+    .main1 img{
+        height: 200px;
+        margin-left: 10px;
+        
+    }
+    .main1{
+        row-gap: 10px;
+    }
+    nav a{
+        font-size: small;
+    }
+    .about-text{
+        padding: 5px;
+        margin: 2px;
+    }
+    .about-text h5{
+        font-size: 15px;
+    }
+    button{
+        margin-right: 20px;
+    }
+    button:hover{
+        font-weight: 100;
+        font-size: 10px;
+    }
+    .contact-me p{
+        font-size: 50px;
+        margin-top: -40px;
+    }
+    .button{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .button:hover{
+        font-size: medium;
+        font-weight: 100;
+    }
+    .pra p{
+        font-size: 10px;
+    }
+    .pra a{
+        font-size: 10px;
+        
+    }
+    .pra a:hover{
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .about{
+        padding: 10px;
+    }
+    nav ul li{
+        display: inline-flex;
+        justify-content: space-around;
+        word-wrap: nowrap;
+        padding-left: 1px;
+        padding-right: 3px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+    }
+    nav ul li a{
+        font-size: 10px;
+        gap: 2px;
+        word-wrap: nowrap;
+        padding: 5px;
+    }
+    nav{
+        gap: 5px;
+    }
+    nav h2{
+        font-size: medium;
+    }
+    .content{
+        margin-top: -20px;
+        padding-left: 20px;
+    }
+    .pic img{
+        height: 250px;
+        width: 200px;
+        margin-top: 50px;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .box{
+        gap: 5px;
+        padding-left: 5px;
+        align-items: center;
+    }
+    .card{
+        margin-left: 2px;
+        
+    }
+    .card h5{
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
+@media (max-width: 680px){
+   /*  .box{
+        padding: 0;
+        margin: 0;
+        font-size: small;
+    }
+    .card{
+        font-size: 5px;
+        gap: -10px;
+        margin-right: -10px;
+    }
+    .pra p{
+        font-size: 8px;
+        padding: 0px;
+        margin: 0;
+        gap: 2px;
+    }
+    .card h5{
+        font-size: 8px;
+        margin: 0;
+    } */
+    .text h4{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .text h3{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .pic img{
+        height: 150px;
+    }
+    .about-text h2{
+        font-size: 20px;
+    }
+    .about-text h5{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 12px;
+    }
+    .title h2{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .title{
+        padding: 5px;
+    }
+    .card{
+        height: 300px;
+        padding-left: 1px;
+        padding-right: 5px;
+        margin-right: 5px;
+        justify-content: center;
+    }
+    .main1 img{
+        height: 100px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .main1{
+        margin: 5px;
+        padding: 5px;
+        gap: 45px;
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: small;
+    }
+    nav h2{
+        font-size: 20px;
+    }
+    .about-text{
+        padding: 5px;
+        margin: 2px;
+    }
+    .about-text h5{
+        font-size: 15px;
+    }
+    button{
+        margin-right: 20px;
+    }
+    button:hover{
+        font-weight: 100;
+        font-size: 10px;
+    }
+    .contact-me p{
+        font-size: 50px;
+        margin-top: -40px;
+    }
+    .button{
+        font-size: 10px;
+        margin-top: 5px;
+        align-items: center;
+    }
+    .button:hover{
+        font-size: medium;
+        font-weight: 100;
+    }
+    .pra p{
+        font-size: 10px;
+    }
+    .pra a{
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    .pra a:hover{
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .about{
+        padding: 10px;
+    }
+    .about h2{
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    nav ul li{
+        display: inline-flex;
+        justify-content: space-around;
+        white-space: nowrap;
+        padding-left: 1px;
+        padding-right: 3px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        margin: 0px;
+    }
+    nav ul li a{
+        font-size: 9px;
+        gap: 2px;
+        white-space: nowrap;
+    }
+    nav{
+        gap: 2px;
+    }
+    nav h2{
+        font-size: small;
+    }
+    .content{
+        margin-top: -20px;
+        padding-left: 20px;
+    }
+    .pic img{
+        height: auto;
+        width: 100px;
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+    .text{
+        margin-top: 30px;
+        padding-top: 30px;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .box{
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+        justify-content: space-evenly;
+        display: grid;
+    }
+    .card{
+        margin: 12px;
+        padding: 15px;
+        height: auto;
+        
+    }
+    .card h5{
+        font-size: 20px;
+        font-weight: 100;
+        padding: 5px;
+    }
+    .pra{
+        text-align: center;
+        
+    }
+    .pra p{
+        font-size: 15px;
+        padding: 2px;
+    }
+    footer p{
+        font-size: small;
+        padding: 5px;
+        padding: 0 20px 0 20px;
+    }
+    .social a{
+        /* padding: 5px; */
+        font-size: small;
+        text-align: center;
+        padding: 0 20px 0 20px;
+        height: auto;
+    }
+    .social a:hover{
+        padding: 2px;
+        font-size: small;
+        text-align: center;
+        gap: 5px;
+    }
+    .contact-me p{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .contact-me a{
+        font-size: 10px;
+    }
+    .contact-me a:hover{
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 350px){
+     nav {
+        padding-top: 5px;
+    }
+    nav ul li a{
+        white-space: nowrap;
+        word-wrap: nowrap;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+    } */
+    .social{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 5px;
+    }
+    .social a{
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+    footer p .end{
+        padding-bottom: 10px;
+        font-size: 9px;
+    }
+    footer a{
+        font-size: 10px;
+    }
+    footer p{
+        font-size: 11px;
+    }
+    .card h5{
+        font-size: 15px;
+    }
+    nav h2{
+        font-size: 9px;
+    }
+    nav ul li{
+        word-wrap: nowrap;
+        border: none;
+    }
+    nav .sub{
+        padding: 0 5px 0 5px;
+        font-size: 10px;
+    }
+    .text h4{
+        font-size: 10px;
+    }
+    .text h2{
+        font-size: 15px;
+    }
+    .text h3{
+        font-size: 10px;
+    }
+    .about h2{
+        font-size: 15px;
+    }
+    .about h5{
+        font-size: 10px;
+    }
+    .about p{
+        font-size: 7px;
+        margin-bottom: 10px;
+    }
+    button a{
+        font-size: 10px;
+        padding: 0;
+        font-weight: 100;
+        white-space: nowrap;
+    }
+    .main1{
+        gap: 20px;
+    }
+    .title h2{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .card{
+        margin: 5px;
+        padding: 5px;
+    }
+    .card h5{
+        font-size: 10px;
+    }
+    .pra p{
+        font-size: 7px;
+        margin-bottom: 5px;
+    }
+    .pra a{
+        font-size: 7px;
+        padding: 2px;
+    }
+    .box{
+        display: flex;
+    }
+    .contact-me p{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .contact-me{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .button-two{
+        padding: 3px;
+        font-size: 9px;
+    }
+}
